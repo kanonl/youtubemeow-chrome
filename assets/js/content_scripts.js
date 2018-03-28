@@ -16,7 +16,6 @@
         anchor.classList.add("q");
         anchor.classList.add("qs");
         anchor.href = yt.toString();
-        // anchor.setAttribute("target", "_blank");
 
         anchor.appendChild(document.createTextNode("YouTube"));
         div.appendChild(anchor);
