@@ -1,5 +1,11 @@
 {
     "manifest_version": 2,
+    "background": {
+        "scripts": [
+            "assets/js/background.js"
+        ],
+        "persistent": false
+    },
     "name": "YouTubeMeow",
     "version": "0.0.100",
     "description": "Adds a YouTube button on the Google search page allowing you to easily transfer your query to YouTube. For when you need to search YouTube right Meow!",
@@ -11,6 +17,9 @@
         "128": "assets/images/icon-128.png"
     },
     "author": "Kanon Lo",
+    "permissions": [
+        "contextMenus"
+    ],
     "content_scripts": [
         {
             "matches": [
