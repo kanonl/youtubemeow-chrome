@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "YouTubeMeow",
     "version": "0.0.100",
-    "description": "Adds a YouTube button on the Google search page allowing you to quickly transfer your query to YouTube. For when you need to search YouTube right Meow!",
+    "description": "Adds a YouTube button on the Google search page allowing you to easily transfer your query to YouTube. For when you need to search YouTube right Meow!",
     "icons": {
         "16": "assets/images/icon-16.png",
         "32": "assets/images/icon-32.png",
