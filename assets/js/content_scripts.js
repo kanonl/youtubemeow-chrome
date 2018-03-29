@@ -1,4 +1,6 @@
 (function () {
+    "use strict";
+    
     let el = document.querySelector("#hdtb-msb-vis");
 
     if (el) {

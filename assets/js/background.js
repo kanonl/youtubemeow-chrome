@@ -1,4 +1,6 @@
 (function () {
+    "use strict";
+    
     const menuItemId = "3391dbce625f4f0980ddbe2c95dfe514";
 
     const contextMenus = () => {
