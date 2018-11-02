@@ -1,9 +1,7 @@
 (function () {
     "use strict";
 
-    const createHandler = () => {
-        if (chrome.runtime.lastError) console.error(chrome.runtime.lastError.message);
-    };
+    const createHandler = () => { if (chrome.runtime.lastError) console.error(chrome.runtime.lastError.message); };
 
     const contextMenus = () => {
         chrome.contextMenus.create({
