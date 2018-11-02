@@ -7,7 +7,7 @@
         "persistent": false
     },
     "name": "YouTubeMeow",
-    "version": "0.0.102",
+    "version": "0.0.103",
     "description": "Adds a YouTube link on the Google search results page and YouTube search by right-click!",
     "icons": {
         "16": "assets/images/icon-16.png",
