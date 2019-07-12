@@ -3,7 +3,13 @@
 
     const createCallback = () => { if (chrome.runtime.lastError) console.error(chrome.runtime.lastError.message); };
 
-    const updateAvailableCallback = (details) => { console.log(details.version); chrome.runtime.reload(); };
+    const updateAvailableCallback = (details) => chrome.runtime.reload();
+
+    const updateCheckCallback = (status, details) => {
+        if (status === "update_available") {
+            console.log(`[${status}] ${details.version}`);
+        }
+    };
 
     const onClickedHandler = (info, tab) => {
         if (info.menuItemId === "youtube") {
@@ -28,6 +34,8 @@
     chrome.runtime.onStartup.addListener(contextMenus);
 
     chrome.runtime.onUpdateAvailable.addListener(updateAvailableCallback);
+
+    chrome.runtime.requestUpdateCheck(updateCheckCallback);
 
     chrome.contextMenus.onClicked.addListener(onClickedHandler);
 })();
