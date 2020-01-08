@@ -24,7 +24,7 @@
         anchor.href = yt.toString();
 
         let span = document.createElement("span");
-        let item = document.querySelector(".hdtb-mitem[aria-selected='false'] span");
+        let item = document.querySelector("div.hdtb-mitem.hdtb-imb span");
         span.className = item.className;
         span.style.height = "16px";
         span.style.width = "16px";
