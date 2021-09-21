@@ -1,16 +1,13 @@
 (function () {
     "use strict";
 
-    let el = document.querySelector("#hdtb-msb-vis");
+    let el = document.querySelector(".hdtb-mitem");
 
     if (el) {
         let url = new URL(window.location.href);
 
         let div = document.createElement("div");
-        div.setAttribute("aria-selected", false);
         div.classList.add("hdtb-mitem");
-        div.classList.add("hdtb-imb");
-        div.setAttribute("role", "tab");
 
         let yt = new URL("https://www.youtube.com");
         yt.pathname = "/results";
@@ -19,12 +16,10 @@
         });
 
         let anchor = document.createElement("a");
-        anchor.classList.add("q");
-        anchor.classList.add("qs");
         anchor.href = yt.toString();
 
         let span = document.createElement("span");
-        let item = document.querySelector("div.hdtb-mitem.hdtb-imb span");
+        let item = document.querySelector("div.hdtb-mitem span");
         span.className = item.className;
         span.style.height = "16px";
         span.style.width = "16px";
@@ -34,6 +29,6 @@
 
         anchor.appendChild(document.createTextNode("YouTube"));
         div.appendChild(anchor);
-        el.appendChild(div);
+        el.parentNode.appendChild(div);
     }
 })();
